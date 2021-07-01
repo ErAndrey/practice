@@ -53,6 +53,36 @@
     color: #FBFBFB;
 }
 
+.facebook{
+    position: absolute;
+    left: 52.15%;
+    right: 46.03%;
+    top: 35.39%;
+    bottom: 33.77%;
+    
+    background: #FFFFFF;
+}
+
+.instagram{
+    position: absolute;
+    left: 57.57%;
+    right: 40.56%;
+    top: 35.29%;
+    bottom: 34.12%;
+    
+    background: #FFFFFF;
+}
+
+.vk{
+    position: absolute;
+    left: 54.93%;
+    right: 43.33%;
+    top: 35.29%;
+    bottom: 34.12%;
+    
+    background: #FFFFFF;
+}
+
 .logoInfo{
     position: absolute;
     width: 269px;
