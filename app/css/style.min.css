@@ -1,6 +1,17 @@
+body{
+    padding: 0;
+    margin:0;
+}
+
+.main{
+    width: 1280px;
+    height: 2000px;
+    margin: auto;
+}
+
+
 .logo{
-    position: absolute;
-    width: 1440px;
+    width: 1280px;
     height: 85px;
     left: 0px;
     top: 0px;
@@ -20,9 +31,9 @@
     position: absolute;
     width: 326px;
     height: 26px;
-    left: 155px;
+    left: 160px;
     top: 30px;
-
+    
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -30,12 +41,11 @@
     line-height: 15px;
     display: flex;
     align-items: center;
-
+    
     color: #FBFBFB;
 }
 
 .logoNumber{
-    position: absolute;
     width: 205px;
     height: 26px;
     left: 618px;
@@ -53,159 +63,55 @@
     color: #FBFBFB;
 }
 
-.facebook{
-    position: absolute;
-    left: 52.15%;
-    right: 46.03%;
-    top: 35.39%;
-    bottom: 33.77%;
-    
-    background: #FFFFFF;
-}
 
-.instagram{
-    position: absolute;
-    left: 57.57%;
-    right: 40.56%;
-    top: 35.29%;
-    bottom: 34.12%;
-    
-    background: #FFFFFF;
-}
-
-.vk{
-    position: absolute;
-    left: 54.93%;
-    right: 43.33%;
-    top: 35.29%;
-    bottom: 34.12%;
-    
-    background: #FFFFFF;
-}
 
 .logoInfo{
     position: absolute;
     width: 269px;
     height: 50px;
-    left: 1016px;
+    left: 906px;
     top: 17px;
-
+    
     font-family: Montserrat;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 12.5px;
     line-height: 15px;
     display: flex;
     align-items: center;
     text-decoration-line: underline;
-
-    color: #FFFFFF;
-}
-
-.rectangleOne{
-    position: absolute;
-    width: 1440px;
-    height: 279px;
-    left: 0px;
-    top: 85px;
     
-    background: #FBFBFB;
-}
-
-.rectangleOneInOne{
-    position: absolute;
-    width: 270px;
-    height: 50px;
-    left: 1015px;
-    top: 131px;
-
-    border: 2px solid #8CC754;
-    box-sizing: border-box;
-    border-radius: 10px;
-
-}
-
-.test1{
-   
-    position: absolute;
-    width: 270px;
-    height: 50px;
-    left: 1015px;
-    top: 131px;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #8CC754;
-}
-
-
-
-.rectangleOneInTwo{
-    position: absolute;
-    width: 270px;
-    height: 50px;
-    left: 1015px;
-    top: 199px;
-
-    border: 2px solid #8CC754;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-
-.test2{
-    position: absolute;
-    width: 270px;
-    height: 50px;
-    left: 1015px;
-    top: 199px;
-    
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    
-    color: #8CC754;
-    
-}
-
-.rectangleOneInThree{
-    position: absolute;
-    width: 270px;
-    height: 50px;
-    left: 1015px;
-    top: 267px;
-
-    background: #8CC754;
-    border-radius: 10px;
-}
-
-.test3{
-    position: absolute;
-    width: 270px;
-    height: 50px;
-    
-    left: 1015px;
-    top: 267px;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 15px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
     color: #FBFBFB;
+}
+
+.glasses{
+    position: absolute;
+    left: 1215px;
+    right: 1.15%;
+    top: 30px;
+    bottom: 98.64%;
+
+    background: #FBFBFB;
+    border: 0.5px solid #8CC754;
+    box-sizing: border-box;
+}
+
+.school{
+    width: 1280px;
+    height: 300px;
+    background-color: #FFFFFF;
+}
+
+.childrenSchool{
+    display: inline-block;
+    width: 223px;
+    height: 118px;
+    padding-top: 131px;
+    padding-left: 10px;
+}
+
+.schoolButtons{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
 }
