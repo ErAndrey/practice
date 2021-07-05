@@ -175,3 +175,31 @@ body{
     background-color:#8CC754;
     color: #FFFFFF;
 }
+
+/****************menu**************************/
+
+
+
+.menu{
+    padding-top:10px;
+    width: 1280px;
+    height: 50px;
+    background-color:#FFFFFF;
+    
+}
+
+.hr{
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px;
+}
+
+ul.hr li {
+    margin-left: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 213px;
+    font-family: Montserrat;
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 90px; /* Отступ слева */
+    padding: 3px; /* Поля вокруг текста */
+   }
