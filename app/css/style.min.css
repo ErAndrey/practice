@@ -97,21 +97,64 @@ body{
 }
 
 .school{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     width: 1280px;
     height: 300px;
     background-color: #FFFFFF;
 }
 
 .childrenSchool{
-    display: inline-block;
     width: 223px;
     height: 118px;
     padding-top: 131px;
     padding-left: 10px;
+ 
 }
 
 .schoolButtons{
-    display: inline-block;
+    padding: 10px;
+    margin-top: 110px;
+    margin-left: 750px;
     width: 300px;
     height: 300px;
+   
+}
+
+.childSchool{
+    width: 326px;
+    height: 30px;
+    margin-top: 2px;
+    font-family: Montserrat;
+    font-size: 18px;
+}
+
+.btn1{
+    width: 270px;
+    height: 50px;
+    border-radius: 10px; 
+    background-color:#FFFFFF;
+    border: 2px solid #8CC754;
+    color: #8CC754;
+}
+
+.btn2{
+    width: 270px;
+    height: 50px;
+    border-radius: 10px; 
+    background-color:#FFFFFF;
+    border: 2px solid #8CC754;
+    color: #8CC754;
+    margin-top:13px;
+}
+
+.btn3{
+    width: 270px;
+    height: 50px;
+    border-radius: 10px; 
+    background-color:#FFFFFF;
+    border: 2px solid #8CC754;
+    color: #8CC754;
+    margin-top:13px;
 }
