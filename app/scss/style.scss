@@ -1,0 +1,63 @@
+$yellow: #f7b028;
+$green-light: #8cc754;
+$green-dark: #72b236;
+$pink: #db538c;
+$purple: #bd67d5;
+$black: #272727;
+$border-color: #adadad;
+$grey-light: #9b9b9b;
+
+@font-face {
+   font-family: "Montserrat";
+   src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+   font-style: normal;
+   font-weight: normal;
+}
+
+body{
+    width: 1280px;
+}
+h1 {
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 37px;
+
+   color: $black;
+}
+h2 {
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 22px;
+}
+
+.more {
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 11px;
+   line-height: 13px;
+
+   color: $green-light;
+}
+.more:hover {
+   color: $green-dark;
+}
+
+.border {
+   border-color: $border-color;
+}
+.date {
+   font-family: Montserrat;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 11px;
+   line-height: 13px;
+   color: $grey-light;
+}
+article.news{
+    pad
+}
