@@ -182,6 +182,7 @@ body{
 
 
 .menu{
+    margin-top:20px;
     padding-top:10px;
     width: 1280px;
     height: 50px;
@@ -210,6 +211,7 @@ ul.hr li {
 
 
 .prev{
+    
     width: 1280px;
     position: relative;
 }
