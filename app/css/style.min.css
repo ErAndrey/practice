@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body{
     padding: 0;
     margin:0;
@@ -10,7 +10,6 @@ body{
     margin: auto;
 }
 
-
 .logo{
     width: 1280px;
     height: 85px;
@@ -20,54 +19,39 @@ body{
     background: #8CC754;
 }
 
-.logoSrc{
-    position: absolute;
-    width: 82px;
-    height: 26px;
-    left: 65px;
-    top: 30px;
-}
+
+
+
 
 .logoText{
-    position: absolute;
+    
     width: 326px;
     height: 26px;
-    left: 160px;
+    left: 105px;
     top: 30px;
-    
+
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 12.5px;
     line-height: 15px;
-    display: flex;
+    display: inline;
     align-items: center;
-    
-    color: #FBFBFB;
-}
-
-.logoNumber{
-    width: 205px;
-    height: 26px;
-    left: 618px;
-    top: 30px;
-
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
 
     color: #FBFBFB;
+
+
+   
+}
+.hrli1{
+    width: 400px;
+    height: 85px;
 }
 
-
+/*
 
 .logoInfo{
-    position: absolute;
+    
     width: 269px;
     height: 50px;
     left: 906px;
@@ -86,8 +70,8 @@ body{
 }
 
 .glasses{
-    position: absolute;
-    left: 1215px;
+    
+    left: 1255px;
     right: 1.15%;
     top: 30px;
     bottom: 98.64%;
@@ -95,7 +79,7 @@ body{
     background: #FBFBFB;
     border: 0.5px solid #8CC754;
     box-sizing: border-box;
-}
+}*/
 
 .school{
     display: flex;
@@ -204,7 +188,7 @@ ul.hr li {
     width: 213px;
     font-family: Montserrat;
     display: inline; /* Отображать как строчный элемент */
-    margin-right: 90px; /* Отступ слева */
+    margin-right: 70px; /* Отступ слева */
     padding: 3px; /* Поля вокруг текста */
    }
 
@@ -230,6 +214,23 @@ ul.hr li {
     border-radius: 10px;
 
 }
-=======
-@font-face{font-family:"Montserrat";src:url("../fonts/Montserrat-Medium.ttf") format("truetype");font-style:normal;font-weight:normal}h1{font-family:Montserrat;font-style:normal;font-weight:500;font-size:30px;line-height:37px;color:#272727}h2{font-family:Montserrat;font-style:normal;font-weight:600;font-size:18px;line-height:22px}.more{font-family:Montserrat;font-style:normal;font-weight:bold;font-size:11px;line-height:13px;color:#8cc754}.more:hover{color:#72b236}.border{border-color:#adadad}.date{font-family:Montserrat;font-style:normal;font-weight:normal;font-size:11px;line-height:13px;color:#9b9b9b}
->>>>>>> aad454c326620b63183f6a9fbd407928b74b3139
+
+@font-face{font-family:"Montserrat";
+    src:url("../fonts/Montserrat-Medium.ttf") format("truetype");
+    font-style:normal;
+    font-weight:normal}h1{font-family:Montserrat;
+        font-style:normal;font-weight:500;
+        font-size:30px;line-height:37px;
+        color:#272727}h2{font-family:Montserrat;
+            font-style:normal;
+            font-weight:600;font-size:18px;
+            line-height:22px}.more{font-family:Montserrat;
+                font-style:normal;
+                font-weight:bold;
+                font-size:11px;line-height:13px;
+                color:#8cc754}.more:hover{color:#72b236}.border{border-color:#adadad}.date{font-family:Montserrat;
+                    font-style:normal;
+                    font-weight:normal;
+                    font-size:11px;
+                    line-height:13px;
+                    color:#9b9b9b}
