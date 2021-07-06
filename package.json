@@ -19,6 +19,7 @@
     "gulp-uglify-es": "^2.0.0"
   },
   "dependencies": {
+    "@types/popper.js": "^1.11.0",
     "bootstrap": "^5.0.2"
   }
 }
