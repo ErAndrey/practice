@@ -1,6 +1,7 @@
 $yellow: #f7b028;
 $green-light: #8cc754;
 $green-dark: #72b236;
+$green-very-dark: #006633;
 $pink: #db538c;
 $purple: #bd67d5;
 $black: #272727;
@@ -14,28 +15,178 @@ $grey-light: #9b9b9b;
    font-weight: normal;
 }
 
-body{
-    width: 1280px;
+* {
+   font-family: "Montserrat";
 }
-h1 {
-   font-family: Montserrat;
+
+body {
+   max-width: 1280px !important;
+}
+
+#courses-container {
+   width: 1280px;
+}
+
+.filter-menu {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-bottom: 50px;
+   flex-wrap: wrap;
+}
+
+.dropdown {
+   width: 390px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.dropdown-btn {
+   width: 390px;
+   height: 50px;
+   border: 1.5px solid $green-light;
+   border-radius: 9px;
+   text-align: center;
+   background: white;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   outline: none;
+}
+
+.dropdown-btn:focus {
+   outline: none;
+}
+
+.dropdown-btn > a {
+   width: 100%;
+}
+
+.dropdown-menu {
+   width: 100%;
+}
+
+#courses-catalog {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+}
+
+.course-item {
+   display: flex;
+   margin: 12px;
+   flex-direction: column;
+   width: 230px;
+   height: 230px;
+   background: white;
+   border: 1px solid $border-color;
+   border-radius: 10px;
+}
+
+.course-name {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   height: 40px;
+   font-size: 12px;
+   font-weight: 600;
+   margin: 0px 10px 0px 10px;
+}
+
+.course-attributes {
+   display: flex;
+   flex-direction: row;
+   font-size: 10px;
+   padding: 3px 5px 3px 5px;
+   justify-content: center;
+}
+
+.course-attributes > p {
+   margin: 0px;
+   width: 95px;
+   font-weight: 600;
+   text-align: center;
+}
+
+.course-attributes > p > img {
+   margin-right: 6px;
+}
+
+.course-actions {
+   display: flex;
+   padding: 0px 22px 0px 22px;
+   justify-content: space-between;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.course-submit {
+   font-size: 10px;
+   font-weight: 600;
+   width: 95px;
+   height: 24px;
+   border: 1px solid $green-dark;
+   border-radius: 5px;
+   color: $green-dark;
+   background-color: white;
+}
+
+.course-submit:focus {
+   outline: none;
+   color: $green-very-dark;
+   border: 1px solid $green-very-dark;
+}
+
+.course-actions > a {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 95px;
+   text-align: center;
+   font-size: 9px;
+   color: $green-light;
+   text-decoration: underline;
+}
+
+.news-section h1,
+.competitions-section h1 {
    font-style: normal;
    font-weight: 500;
    font-size: 30px;
    line-height: 37px;
-
    color: $black;
+
+   margin-top: 2em;
+   margin-bottom: 2em;
 }
-h2 {
-   font-family: Montserrat;
+.news-section h2,
+.competitions-section h2 {
    font-style: normal;
    font-weight: 600;
    font-size: 18px;
    line-height: 22px;
+   margin-bottom: 1em;
+}
+.news-section,
+.competitions-section {
+   padding: 0 12px;
+}
+article.news p,
+.main-news p {
+   font-style: normal;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 16px;
+   color: $black;
 }
 
 .more {
-   font-family: Montserrat;
    font-style: normal;
    font-weight: bold;
    font-size: 11px;
@@ -51,13 +202,78 @@ h2 {
    border-color: $border-color;
 }
 .date {
-   font-family: Montserrat;
    font-style: normal;
    font-weight: normal;
    font-size: 11px;
    line-height: 13px;
    color: $grey-light;
+   text-align: right;
 }
-article.news{
-    pad
+article.news {
+   width: 94%;
+   margin-left: 6%;
+   padding: 2.5em 2.5em 2em 2.5em;
+}
+article.main-news {
+   padding: 2.5em 2.5em 2em 2.5em;
+}
+article.news:first {
+   margin-bottom: 1em;
+}
+.news-div {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.main-news,
+.competition,
+article.news {
+   border-radius: 10px;
+}
+.competition p {
+   font-style: normal;
+   font-weight: normal;
+   font-size: 11px;
+   line-height: 14px;
+   color: $grey-light;
+   font-size: 11px;
+}
+.competitions-container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.competition {
+   width: 31.3%;
+   padding: 2.5em 3em 2em 3em;
+}
+.news-container {
+   box-sizing: border-box;
+}
+.competitions-section {
+   margin-bottom: 6em;
+}
+
+@media screen and (max-width: 940px) and (min-width: 768px) {
+   .competition {
+      width: 48%;
+      margin-left: 0%;
+      margin-top: 1em;
+   }
+   article.news {
+      width: 100%;
+      margin-left: 0%;
+      margin-top: 1em;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   article.news,
+   .competition {
+      width: 100%;
+      margin-left: 0%;
+      margin-top: 1em;
+   }
 }
