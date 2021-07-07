@@ -23,10 +23,11 @@ body{
 
 .logoSSTU{
     display: inline-block;
-    width: 82px;
+    width: 90px;
     height: 26px;
-    margin-left: 15px;
+    padding-left: 15px;
     margin-top: 20px;
+    margin: auto;
     
 }
 
@@ -37,8 +38,9 @@ body{
 .logoTextSSTU{ 
     width: 326px;
     height: 26px;
-  /*  left: 105px;*/
     margin-top: 30px;
+    padding-left: 12px;
+    
     
 
     font-family: Montserrat;
@@ -72,7 +74,8 @@ body{
     display: inline-block;
     width: 50,25px;
     height: 18,87px;
-    padding-top:20px;
+    margin-top:20px;
+   
 }
 
 .school{
