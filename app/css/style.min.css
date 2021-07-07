@@ -21,11 +21,12 @@ body{
 
 
 
+.logoSSTU{
+    display: inline;
+}
 
-
-.logoText{
-    
-    width: 326px;
+.logoTextSSTU{
+    width: 200px;
     height: 26px;
     left: 105px;
     top: 30px;
@@ -39,47 +40,15 @@ body{
     align-items: center;
 
     color: #FBFBFB;
-
-
-   
 }
-.hrli1{
-    width: 400px;
-    height: 85px;
-}
-
-/*
 
 .logoInfo{
-    
+    display: inline ;
     width: 269px;
     height: 50px;
-    left: 906px;
-    top: 17px;
-    
     font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12.5px;
-    line-height: 15px;
-    display: flex;
-    align-items: center;
-    text-decoration-line: underline;
-    
     color: #FBFBFB;
 }
-
-.glasses{
-    
-    left: 1255px;
-    right: 1.15%;
-    top: 30px;
-    bottom: 98.64%;
-
-    background: #FBFBFB;
-    border: 0.5px solid #8CC754;
-    box-sizing: border-box;
-}*/
 
 .school{
     display: flex;
