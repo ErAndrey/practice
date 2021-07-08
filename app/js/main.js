@@ -159,4 +159,9 @@ function displayCourses(arr) {
 window.onload = () => {
    filteredCourses = courses;
    displayCourses(courses);
+   $("#phone").mask("+7 (999) 999-9999");
 };
+
+$(document).ready(function () {
+   $("#phone").mask("+7 (999) 999-9999");
+});

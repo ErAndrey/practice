@@ -8,6 +8,8 @@ $black: #272727;
 $border-color: #adadad;
 $grey-light: #9b9b9b;
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
 @font-face {
    font-family: "Montserrat";
    src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
@@ -161,9 +163,6 @@ body {
    font-size: 30px;
    line-height: 37px;
    color: $black;
-
-   margin-top: 2em;
-   margin-bottom: 2em;
 }
 .news-section h2,
 .competitions-section h2 {
@@ -277,79 +276,71 @@ article.news {
       margin-top: 1em;
    }
 }
-
 body {
    padding: 0;
    margin: 0;
 }
 
-.main {
-   width: 1280px;
-   margin: auto;
-}
-
 .logo {
-   width: 1280px;
-   height: 85px;
-   left: 0px;
-   top: 0px;
-
+   width: 100%;
+   // height: 85px;
    background: #8cc754;
+   display: flex;
+   justify-content: space-between;
 }
 
-.logoText {
-   width: 326px;
-   height: 26px;
-   left: 105px;
-   top: 30px;
+.logoSSTU {
+   // display: inline-block;
+   width: 90px;
+   // height: 26px;
+   padding-left: 15px;
+   // margin-top: 20px;
+   // margin: auto;
+}
+
+.ltsstu {
+   display: inline;
+}
+
+.logoTextSSTU {
+   width: 100%;
+   // height: 26px;
+   // margin-top: 30px;
+   padding-left: 12px;
 
    font-family: Montserrat;
    font-style: normal;
-   font-weight: 500;
+
    font-size: 12.5px;
    line-height: 15px;
-   display: inline;
+   // display: inline-block;
    align-items: center;
 
    color: #fbfbfb;
 }
-.hrli1 {
-   width: 400px;
-   height: 85px;
-}
 
-/*
+.logoInfo {
+   // display: inline-block;
+   width: 40%;
+   // height: 50px;
 
-.logoInfo{
-   
-   width: 269px;
-   height: 50px;
-   left: 906px;
-   top: 17px;
-   
+   margin-left: 500px;
    font-family: Montserrat;
    font-style: normal;
-   font-weight: 500;
    font-size: 12.5px;
    line-height: 15px;
-   display: flex;
    align-items: center;
    text-decoration-line: underline;
-   
-   color: #FBFBFB;
+
+   color: #fbfbfb;
 }
 
-.glasses{
-   
-   left: 1255px;
-   right: 1.15%;
-   top: 30px;
-   bottom: 98.64%;
-
-   background: #FBFBFB;
-   border: 0.5px solid #8CC754;
-   box-sizing: border-box;
-}*/
+.glasses {
+   // display: inline-block;
+   width: 50, 25px;
+   height: 18, 87px;
+   // margin-top: 20px;
+}
 
 .school {
    display: flex;
@@ -458,6 +449,7 @@ ul.hr li {
 .prev {
    width: 1280px;
    position: relative;
+   margin-bottom: 30px;
 }
 
 .btnCourse {
@@ -473,46 +465,179 @@ ul.hr li {
    border-radius: 10px;
 }
 
-@font-face {
-   font-family: "Montserrat";
-   src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
-   font-style: normal;
-   font-weight: normal;
+.podval {
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 0;
+   width: 1280px;
+   height: 616px;
+   background: #8cc754;
 }
-h1 {
-   font-family: Montserrat;
-   font-style: normal;
-   font-weight: 500;
-   font-size: 30px;
-   line-height: 37px;
-   color: #272727;
+
+input,
+textarea {
+   /*убрать рамку у input-ов, отступ placeholder текста*/
+   outline: none;
+   border: none;
+   border: solid 1px #f2f2f2;
+   text-indent: 23px;
 }
-h2 {
+
+button {
+   /*убрать рамку у button*/
+   outline: none;
+   border: none;
+   border: solid 1px #f6b028;
+}
+
+.txt1 {
+   width: 390px;
+   height: 25px;
+   padding-left: 16px;
+   padding-top: 36px;
+
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 20.2713px;
+   line-height: 24px;
+
+   color: #fbfbfb;
+}
+
+/*для отступа меж input-ами*/
+.form0 {
+   padding-left: 16px;
+   padding-top: 36px;
+}
+.form1 {
+   padding-left: 16px;
+   padding-top: 18px;
+}
+
+.input1 {
+   width: 390px;
+   height: 36px;
+   background: #ffffff;
+   border-radius: 10px;
+}
+.input1:focus {
+   box-shadow: 0 0 15px #c0fc89;
+}
+
+.input2:focus {
+   box-shadow: 0 0 15px #c0fc89;
+}
+.input2 {
+   width: 391px;
+   height: 139.56px;
+   background: #ffffff;
+   border-radius: 10px;
+}
+.button1 {
+   width: 398px;
+   height: 44.44px;
+   background-color: #f6b028;
+   border-radius: 10px;
    font-family: Montserrat;
    font-style: normal;
    font-weight: 600;
-   font-size: 18px;
-   line-height: 22px;
+   font-size: 13.6543px;
+   line-height: 17px;
+   color: #fbfbfb;
+   transition: background-color 1s ease 0;
+   position: relative;
+   top: 0;
 }
-.more {
+.button1:hover {
+   background-color: #fac04d;
+}
+
+.button1:active {
+   top: 1.5px;
+}
+
+.add_inform {
+   display: inline-block;
+   padding-left: 16px;
+   padding-top: 15px;
+}
+.add_1 {
+   padding-left: 364px;
+}
+.add_2 {
+   padding-left: 48px;
+}
+.last_txt {
+   height: 17px;
    font-family: Montserrat;
    font-style: normal;
-   font-weight: bold;
-   font-size: 11px;
-   line-height: 13px;
-   color: #8cc754;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 17px;
+   color: #fbfbfb;
 }
-.more:hover {
-   color: #72b236;
+.none_decoration {
+   color: #fbfbfb !important;
+   text-decoration: none;
 }
-.border {
-   border-color: #adadad;
+
+.picture {
+   position: absolute;
+   padding-left: 234px;
+   padding-top: 15px;
 }
-.date {
-   font-family: Montserrat;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 11px;
-   line-height: 13px;
-   color: #9b9b9b;
+.ots_1 {
+   padding-left: 2px;
+}
+.ots_2 {
+   padding-left: 7px;
+}
+/*анимация для placeholder*/
+.input1::-webkit-input-placeholder {
+   opacity: 1;
+   transition: opacity 0.3s ease;
+}
+.input1::-moz-placeholder {
+   opacity: 1;
+   transition: opacity 0.3s ease;
+}
+.input1:-moz-placeholder {
+   opacity: 1;
+   transition: opacity 0.3s ease;
+}
+.input1:-ms-input-placeholder {
+   opacity: 1;
+   transition: opacity 0.3s ease;
+}
+.input1:focus::-webkit-input-placeholder {
+   opacity: 0;
+   transition: opacity 0.3s ease;
+}
+.input1:focus::-moz-placeholder {
+   opacity: 0;
+   transition: opacity 0.3s ease;
+}
+.input1:focus:-moz-placeholder {
+   opacity: 0;
+   transition: opacity 0.3s ease;
+}
+.input1:focus:-ms-input-placeholder {
+   opacity: 0;
+   transition: opacity 0.3s ease;
+}
+
+/*цвет placeholder*/
+input::-webkit-input-placeholder {
+   color: #a7a7a7;
+}
+
+.map {
+   position: absolute;
+   width: 818px;
+   height: 420px;
+   border-radius: 10px;
+   border: solid 1px #8cc754;
+   margin-left: 446px;
+   margin-top: 36px;
 }
