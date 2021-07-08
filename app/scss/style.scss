@@ -20,13 +20,22 @@ $white: #fbfbfb;
 
 * {
    font-family: "Montserrat";
+   font-size: 14px;
 }
-
+html {
+   width: 100%;
+}
 body {
-   max-width: 1280px !important;
+   width: 100%;
    scroll-behavior: smooth;
 }
-
+.w-1280 {
+   max-width: 1280px !important;
+}
+header {
+   background-color: $green-light;
+   width: 100%;
+}
 #courses-container {
    width: 1280px;
 }
@@ -176,7 +185,7 @@ body {
 }
 .news-section,
 .competitions-section {
-   padding: 0 12px;
+   padding-left: 12px;
 }
 article.news p,
 .main-news p {
@@ -350,25 +359,21 @@ body {
    display: flex;
    flex-direction: row;
    flex-wrap: nowrap;
+   justify-content: space-between;
    width: 1280px;
    // height: 300px;
-   background-color: white;
+   // background-color: white;
+   font-size: 14px;
 }
 
 .childrenSchool {
    width: 223px;
-   // height: 118px;
-   // padding-top: 80px;
    padding-left: 10px;
 }
 
 .schoolButtons {
    padding: 10px;
-   // margin-top: 80px;
-   // margin-top: 110px;
-   margin-left: 750px;
    width: 300px;
-   // height: 300px;
 }
 
 .childSchool {
@@ -384,50 +389,50 @@ body {
    width: 270px;
    height: 50px;
    border-radius: 10px;
-   background-color: $white;
-   border: 2px solid $green-light;
-   color: $green-light;
+   background-color: white;
+   border: 2px solid $green-dark;
+   color: $green-dark;
    transition: 0.3s;
 }
 
 .btn1:active,
 .btn1:hover {
-   background-color: $green-light;
-   color: $white;
+   background-color: $green-dark;
+   color: white;
 }
 
 .btn2 {
    width: 270px;
    height: 50px;
    border-radius: 10px;
-   background-color: $white;
-   border: 2px solid $green-light;
-   color: $green-light;
+   background-color: white;
+   border: 2px solid $green-dark;
+   color: $green-dark;
    margin-top: 13px;
    transition: 0.3s;
 }
 
 .btn2:active,
 .btn2:hover {
-   background-color: $green-light;
-   color: $white;
+   background-color: $green-dark;
+   color: white;
 }
 
 .btn3 {
    width: 270px;
    height: 50px;
    border-radius: 10px;
-   background-color: $white;
-   border: 2px solid $green-light;
-   color: $green-light;
+   background-color: white;
+   border: 2px solid $green-dark;
+   color: $green-dark;
    margin-top: 13px;
    transition: 0.3s;
 }
 
 .btn3:active,
 .btn3:hover {
-   background-color: $green-light;
-   color: $white;
+   background-color: $green-dark;
+   color: white;
 }
 
 /****************menu**************************/
@@ -479,13 +484,13 @@ ul.hr li {
    outline: none;
 }
 
-.podval {
+footer {
+   width: 100%;
    margin-left: auto;
    margin-right: auto;
    margin-top: 0;
-   width: 1280px;
    height: 616px;
-   background: #8cc754;
+   background: $green-light;
 }
 
 input,
@@ -493,7 +498,7 @@ textarea {
    /*убрать рамку у input-ов, отступ placeholder текста*/
    outline: none;
    border: none;
-   border: solid 1px #f2f2f2;
+   border: solid 1px $white;
    text-indent: 23px;
 }
 
@@ -558,13 +563,13 @@ button {
    font-weight: 600;
    font-size: 14px;
    line-height: 17px;
-   color: #fbfbfb;
+   color: $white;
    transition: background-color 1s ease 0;
    position: relative;
    top: 0;
 }
 .button1:hover {
-   background-color: #fac04d;
+   background-color: $yellow;
 }
 
 .button1:active {
@@ -589,10 +594,10 @@ button {
    font-weight: 500;
    font-size: 14px;
    line-height: 17px;
-   color: #fbfbfb;
+   color: $white;
 }
 .none_decoration {
-   color: #fbfbfb !important;
+   color: $white !important;
    text-decoration: none;
 }
 
@@ -643,7 +648,7 @@ button {
 
 /*цвет placeholder*/
 input::-webkit-input-placeholder {
-   color: #a7a7a7;
+   color: $border-color;
 }
 
 .map {
@@ -651,7 +656,7 @@ input::-webkit-input-placeholder {
    width: 818px;
    height: 420px;
    border-radius: 10px;
-   border: solid 1px #8cc754;
+   border: solid 1px $green-light;
    margin-left: 446px;
    margin-top: 36px;
 }
