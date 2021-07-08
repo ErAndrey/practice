@@ -7,6 +7,7 @@ $purple: #bd67d5;
 $black: #272727;
 $border-color: #adadad;
 $grey-light: #9b9b9b;
+$white: #fbfbfb;
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
@@ -23,6 +24,7 @@ $grey-light: #9b9b9b;
 
 body {
    max-width: 1280px !important;
+   scroll-behavior: smooth;
 }
 
 #courses-container {
@@ -284,7 +286,7 @@ body {
 .logo {
    width: 100%;
    // height: 85px;
-   background: #8cc754;
+   background: $green-light;
    display: flex;
    justify-content: space-between;
 }
@@ -316,7 +318,7 @@ body {
    // display: inline-block;
    align-items: center;
 
-   color: #fbfbfb;
+   color: $white;
 }
 
 .logoInfo {
@@ -331,8 +333,10 @@ body {
    line-height: 15px;
    align-items: center;
    text-decoration-line: underline;
-
-   color: #fbfbfb;
+}
+.logoInfo a {
+   color: $white;
+   transition: 0.1s;
 }
 
 .glasses {
@@ -347,23 +351,24 @@ body {
    flex-direction: row;
    flex-wrap: nowrap;
    width: 1280px;
-   height: 300px;
-   background-color: #ffffff;
+   // height: 300px;
+   background-color: white;
 }
 
 .childrenSchool {
    width: 223px;
-   height: 118px;
-   padding-top: 131px;
+   // height: 118px;
+   // padding-top: 80px;
    padding-left: 10px;
 }
 
 .schoolButtons {
    padding: 10px;
-   margin-top: 110px;
+   // margin-top: 80px;
+   // margin-top: 110px;
    margin-left: 750px;
    width: 300px;
-   height: 300px;
+   // height: 300px;
 }
 
 .childSchool {
@@ -371,77 +376,79 @@ body {
    height: 30px;
    margin-top: 2px;
    font-family: Montserrat;
-   font-size: 18px;
+   font-size: 14px;
+   font-weight: 550;
 }
 
 .btn1 {
    width: 270px;
    height: 50px;
    border-radius: 10px;
-   background-color: #ffffff;
-   border: 2px solid #8cc754;
-   color: #8cc754;
+   background-color: $white;
+   border: 2px solid $green-light;
+   color: $green-light;
+   transition: 0.3s;
 }
 
-.btn1:active {
-   background-color: #8cc754;
-   color: #ffffff;
+.btn1:active,
+.btn1:hover {
+   background-color: $green-light;
+   color: $white;
 }
 
 .btn2 {
    width: 270px;
    height: 50px;
    border-radius: 10px;
-   background-color: #ffffff;
-   border: 2px solid #8cc754;
-   color: #8cc754;
+   background-color: $white;
+   border: 2px solid $green-light;
+   color: $green-light;
    margin-top: 13px;
+   transition: 0.3s;
 }
 
-.btn2:active {
-   background-color: #8cc754;
-   color: #ffffff;
+.btn2:active,
+.btn2:hover {
+   background-color: $green-light;
+   color: $white;
 }
 
 .btn3 {
    width: 270px;
    height: 50px;
    border-radius: 10px;
-   background-color: #ffffff;
-   border: 2px solid #8cc754;
-   color: #8cc754;
+   background-color: $white;
+   border: 2px solid $green-light;
+   color: $green-light;
    margin-top: 13px;
+   transition: 0.3s;
 }
 
-.btn3:active {
-   background-color: #8cc754;
-   color: #ffffff;
+.btn3:active,
+.btn3:hover {
+   background-color: $green-light;
+   color: $white;
 }
 
 /****************menu**************************/
 
-.menu {
-   margin-top: 20px;
-   padding-top: 10px;
-   width: 1280px;
-   height: 50px;
-   background-color: #ffffff;
-}
-
 .hr {
-   margin: 0; /* Обнуляем значение отступов */
-   padding: 4px;
+   display: flex !important;
+   flex-direction: row;
+   justify-content: space-around;
 }
-
 ul.hr li {
-   margin-left: 40px;
-   padding-left: 0px;
-   padding-right: 0px;
-   width: 213px;
    font-family: Montserrat;
-   display: inline; /* Отображать как строчный элемент */
-   margin-right: 70px; /* Отступ слева */
-   padding: 3px; /* Поля вокруг текста */
+   display: inline;
+}
+.hr a {
+   text-decoration: none;
+   color: $black;
+   transition: 0.2s;
+}
+.hr a:hover {
+   text-decoration: none;
+   color: $green-dark;
 }
 
 /*****************prev******************/
@@ -459,10 +466,17 @@ ul.hr li {
    left: 520px;
    top: 387px;
 
-   background: #ffffff;
-   border: 3px solid #ffffff;
+   background: $white;
+   border: 3px solid $white;
    box-sizing: border-box;
    border-radius: 10px;
+   transition: 0.3s;
+}
+.btnCourse:hover {
+   color: $pink;
+}
+.btnCourse:active {
+   outline: none;
 }
 
 .podval {
@@ -487,7 +501,7 @@ button {
    /*убрать рамку у button*/
    outline: none;
    border: none;
-   border: solid 1px #f6b028;
+   border: solid 1px $yellow;
 }
 
 .txt1 {
@@ -499,10 +513,10 @@ button {
    font-family: Open Sans;
    font-style: normal;
    font-weight: bold;
-   font-size: 20.2713px;
+   font-size: 17px;
    line-height: 24px;
 
-   color: #fbfbfb;
+   color: $white;
 }
 
 /*для отступа меж input-ами*/
@@ -518,7 +532,7 @@ button {
 .input1 {
    width: 390px;
    height: 36px;
-   background: #ffffff;
+   background: $white;
    border-radius: 10px;
 }
 .input1:focus {
@@ -531,18 +545,18 @@ button {
 .input2 {
    width: 391px;
    height: 139.56px;
-   background: #ffffff;
+   background: $white;
    border-radius: 10px;
 }
 .button1 {
    width: 398px;
    height: 44.44px;
-   background-color: #f6b028;
+   background-color: $yellow;
    border-radius: 10px;
    font-family: Montserrat;
    font-style: normal;
    font-weight: 600;
-   font-size: 13.6543px;
+   font-size: 14px;
    line-height: 17px;
    color: #fbfbfb;
    transition: background-color 1s ease 0;
